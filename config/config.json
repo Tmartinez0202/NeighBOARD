@@ -16,11 +16,7 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": "Brandnew12!",
     "use_env_variable": "JAWSDB_URL",
-    "host": "127.0.0.1",
-    "port": 3306,
     "dialect": "mysql"
   }
 }
