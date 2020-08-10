@@ -29,7 +29,7 @@ $(document).ready(function() {
   // A function for creating an author. Calls getAuthors upon completion
   function upsertNeighbor(neighborData) {
     $.post("/api/neighbors", neighborData)
-      .then(getNeighbors);
+      .then(getNeighbor);
   }
 
   // Function for creating a new list row for authors
@@ -49,7 +49,7 @@ $(document).ready(function() {
   }
 
   // Function for retrieving authors and getting them ready to be rendered to the page
-  function getNeighbors() {
+  function getNeighbor() {
     $.get("/api/neighbors", function(data) {
       var rowsToAdd = [];
       for (var i = 0; i < data.length; i++) {

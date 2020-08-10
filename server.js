@@ -33,7 +33,7 @@ require("./routes/neighbor-api-routes.js")(app);
 require("./routes/post-api-routes.js")(app);
 
 app.get("/", function(req, res) {
-  res.render("cms");
+  res.render("home");
 });
 
 app.get("/neighbors", function(req, res) {
