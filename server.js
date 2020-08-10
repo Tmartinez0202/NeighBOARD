@@ -33,20 +33,6 @@ require("./routes/neighbor-api-routes.js")(app);
 require("./routes/post-api-routes.js")(app);
 
 app.get("/", function(req, res) {
-<<<<<<< HEAD
-  res.render("index");
-});
-
-app.get("/neighbor-manager", function(req, res) {
-  res.render("neighbor-manager");
-});
-
-app.get("/cms", function(req, res) {
-  res.render("cms");
-});
-
-
-=======
   res.render("cms");
 });
 
@@ -54,10 +40,13 @@ app.get("/neighbors", function(req, res) {
   res.render("neighbor-manager");
 });
 
-app.get("/posts", function(req, res) {
+app.get("/blog", function(req, res) {
   res.render("blog");
 });
->>>>>>> d0992744e930a07c18e17d549c8464b82aae33db
+
+app.get("/cms", function(req, res) {
+  res.render("cms");
+});
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
 db.sequelize.sync({ force: false }).then(function() {

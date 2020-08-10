@@ -2,14 +2,16 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-		<link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
 		<title>NeighBOARD</title>
+		{{!-- <script src="/public/js/neighbor.js"></script> --}}
+		{{!-- <script src="/public/js/blog.js"></script> --}}
+		{{!-- <script src="/public/js/cms.js"></script> --}}
 		<script src="https://code.jquery.com/jquery.js"></script>
-		<script src="/public/js/neighbor.js"></script>
-		<script src="/public/js/blog.js"></script>
-		<script src="/public/js/cms.js"></script>
+		<link rel="stylesheet" href="/public/assets/css/style.css" type="text/css" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/lux/bootstrap.min.css" integrity="sha384-smnSwzHqW1zKbeuSMsAM/fMQpkk7HY11LuHiwT8snL/W2QBoZtVCT4H5x1CEcJCs" crossorigin="anonymous">
 	</head>
 	<body>
+		{{>navbar}}
 		{{{ body }}}
 	</body>
 </html>
