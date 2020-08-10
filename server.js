@@ -32,6 +32,19 @@ require("./routes/html-routes.js")(app);
 require("./routes/neighbor-api-routes.js")(app);
 require("./routes/post-api-routes.js")(app);
 
+app.get("/", function(req, res) {
+  res.render("index");
+});
+
+app.get("/neighbor-manager", function(req, res) {
+  res.render("neighbor-manager");
+});
+
+app.get("/cms", function(req, res) {
+  res.render("cms");
+});
+
+
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
 db.sequelize.sync({ force: false }).then(function() {
