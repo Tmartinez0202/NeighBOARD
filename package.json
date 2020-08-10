@@ -1,0 +1,29 @@
+{
+  "name": "NeighBOARD",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "express-handlebars": "^5.1.0",
+    "iconv-lite": "^0.4.24",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.1.0",
+    "sequelize": "^6.3.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tmartinez0202/NeighBOARD.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tmartinez0202/NeighBOARD/issues"
+  },
+  "homepage": "https://github.com/Tmartinez0202/NeighBOARD#readme"
+}
