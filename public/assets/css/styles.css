@@ -1,3 +1,13 @@
+body {
+  background-image: url(/assets/background_fence.jpg)
+}
+
+img {
+  width:  500px;
+  height: 500px;
+  object-fit: cover;
+}
+
 button.submit {
   float: right;
 }
@@ -26,6 +36,8 @@ button.edit {
 
 .blog-container {
   margin-top: 30px;
+  font-size: 20px;
+  font: black;
 }
 
 .blog {
