@@ -27,7 +27,7 @@ module.exports = function(sequelize, DataTypes) {
       onDelete: "cascade"
     });
   };
-  console.log(test)
+
 
   return Neighbor;
   
