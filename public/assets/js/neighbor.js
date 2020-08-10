@@ -37,11 +37,11 @@ $(document).ready(function() {
     var newTr = $("<tr>");
     newTr.data("neighbor", neighborData);
     newTr.append("<td>" + neighborData.name + "</td>");
-    if (neighborData.Posts) {
-      newTr.append("<td> " + neighborData.Posts.length + "</td>");
-    } else {
-      newTr.append("<td>0</td>");
-    }
+    // if (neighborData.Posts) {
+    //   newTr.append("<td> " + neighborData.Posts.length + "</td>");
+    // } else {
+    //   newTr.append("<td>0</td>");
+    // }
     newTr.append("<td><a href='/blog?neighbor_id=" + neighborData.id + "'>Go to Posts</a></td>");
     newTr.append("<td><a href='/cms?neighbor_id=" + neighborData.id + "'>Create a Post</a></td>");
     newTr.append("<td><a style='cursor:pointer;color:red' class='delete-neighbor'>Delete Neighbor</a></td>");
