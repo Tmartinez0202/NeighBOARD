@@ -1,6 +1,9 @@
 $(document).ready(function() {
   // Getting references to the name input and author container, as well as the table body
   var nameInput = $("#neighbor-name");
+  var neighPet = $("#neighbor-pet")
+  var neighKid = $("#neighbor-kid")
+  var neighCar = $("#neighbor-car")
   var neighborList = $("tbody");
   var neighborContainer = $(".neighbor-container");
   // Adding event listeners to the form to create a new object, and the button to delete
@@ -18,13 +21,22 @@ $(document).ready(function() {
     if (!nameInput.val().trim().trim()) {
       return;
     }
+
     // Calling the upsertAuthor function and passing in the value of the name input
     upsertNeighbor({
       name: nameInput
         .val()
-        .trim()
-    });
+        .trim(),
+      pets: neighPet
+        .val(),
+      kids: neighKid
+        .val(),
+      cars: neighCar
+        .val()
+      });
+      console.log()
   }
+
 
   // A function for creating an author. Calls getAuthors upon completion
   function upsertNeighbor(neighborData) {
@@ -37,6 +49,9 @@ $(document).ready(function() {
     var newTr = $("<tr>");
     newTr.data("neighbor", neighborData);
     newTr.append("<td>" + neighborData.name + "</td>");
+    newTr.append("<td>" + neighborData.pets + "</td>")
+    newTr.append("<td>" + neighborData.kids + "</td>")
+    newTr.append("<td>" + neighborData.cars + "</td>")
     // if (neighborData.Posts) {
     //   newTr.append("<td> " + neighborData.Posts.length + "</td>");
     // } else {

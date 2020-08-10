@@ -9,7 +9,6 @@
 	{{!-- <link rel="stylesheet" href="css/styles.css" media="screen" title="no title"> --}}
 	{{!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> --}}
 	<script src="https://code.jquery.com/jquery.js"></script>
-	
 </head>
 
 <body>
@@ -31,9 +30,9 @@
 							<tr>
 								<th>Name</th>
 								<th># of Posts</th>
-								<th>See Author's Posts</th>
+								<th>See Neighbors Posts</th>
 								<th>New Post</th>
-								<th>Delete Author</th>
+								<th>Delete Neighbor</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -41,6 +40,15 @@
 								<form id="neighbor-form">
 									<td colspan="4">
 										<input placeholder="Enter a name" id="neighbor-name" type="text" />
+									</td>
+									<td colspan="4">
+										<input placeholder="Pets?" id="neighbor-pet" type="text" />
+									</td>
+									<td colspan="4">
+										<input placeholder="Kids" id="neighbor-kid" type="text" />
+									</td>
+									<td colspan="4">
+										<input placeholder="How many cars?" id="neighbor-car" type="text" />
 									</td>
 									<td><button type="submit" class="btn btn-success">Create Neighbor</button>
 									</td>
