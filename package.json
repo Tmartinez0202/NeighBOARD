@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
+    "express": "^4.17.1",
     "express-handlebars": "^5.1.0",
     "iconv-lite": "^0.4.24",
     "mysql": "^2.18.1",
