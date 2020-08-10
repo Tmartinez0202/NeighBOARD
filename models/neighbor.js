@@ -7,8 +7,15 @@ module.exports = function(sequelize, DataTypes) {
             len: [1, 30]
           }
     },
-    pets: DataTypes.BOOLEAN,
-    kids: DataTypes.BOOLEAN,
+    pets:{
+      type: DataTypes.INTEGER,
+      allowNull: true
+    }, 
+    kids:{
+      type:DataTypes.INTEGER,
+      allowNull: true
+
+    },
     cars:{
           type: DataTypes.INTEGER,
           max: 4
