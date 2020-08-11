@@ -1,4 +1,4 @@
-# NeighBOARD/Community Click/Whatever
+# NeighBOARD
 
 ## Table of Contents
 * [Description](#description)
