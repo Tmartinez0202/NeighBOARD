@@ -8,6 +8,22 @@ img {
   object-fit: cover;
 }
 
+#welcomebar {
+  margin: 10px 0px 10px 0px;
+}
+
+#welcome {
+  font-family: 'Indie Flower', cursive;
+  font-size: 48px;
+  text-align: center;
+  padding: 10px 0 px 10px 0px;
+}
+
+.accordianHead {
+  font-family: 'Indie Flower', cursive;
+  font-size: 20px;
+}
+
 button.submit {
   float: right;
 }
