@@ -4,6 +4,7 @@ $(document).ready(function() {
   var neighPet = $("#neighbor-pet")
   var neighKid = $("#neighbor-kid")
   var neighCar = $("#neighbor-car")
+  var neighRanking = $("#neighbor-ranking")
   var neighborList = $("tbody");
   var neighborContainer = $(".neighbor-container");
   // Adding event listeners to the form to create a new object, and the button to delete
@@ -32,7 +33,9 @@ $(document).ready(function() {
       kids: neighKid
         .val(),
       cars: neighCar
-        .val()
+        .val(),
+      ranking: neighRanking
+        .val()  
       });
       console.log()
   }
@@ -52,6 +55,7 @@ $(document).ready(function() {
     newTr.append("<td>" + neighborData.pets + "</td>")
     newTr.append("<td>" + neighborData.kids + "</td>")
     newTr.append("<td>" + neighborData.cars + "</td>")
+    newTr.append("<td>" + neighborData.ranking + "</td>")
     // if (neighborData.Posts) {
     //   newTr.append("<td> " + neighborData.Posts.length + "</td>");
     // } else {

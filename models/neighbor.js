@@ -19,7 +19,11 @@ module.exports = function(sequelize, DataTypes) {
     cars:{
           type: DataTypes.INTEGER,
           max: 4
-    }
+    },
+    ranking:{
+      type: DataTypes.INTEGER,
+      max: 10
+}
   });
 
   Neighbor.associate = function(models) {
